@@ -11,10 +11,10 @@ all:
 	mkdir -p bin
 	$(JAVAC) $(JFLAGS) $(SOURCES)
  
-run: all
+run-serial: all
 	$(JAVA) -cp bin FirelineSerial $(ARGS)
  
-run-parallel: all
+run: all
 	$(JAVA) $(JAVA_OPTS) -cp bin FirelineParallel $(ARGS)
  
 clean:
