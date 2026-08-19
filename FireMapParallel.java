@@ -19,7 +19,7 @@
  */
 public class FireMapParallel extends FireMap {
 
-    private static final int DEFAULT_SEQUENTIAL_CUTOFF = 2_000;
+    private static final int DEFAULT_SEQUENTIAL_CUTOFF = 1_000;
 
     private final int sequentialCutoff;
 
